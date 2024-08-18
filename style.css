@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://img.freepik.com/free-vector/gradient-numerology-background_23-2150051037.jpg?size=626&ext=jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 28px;
+    color: #fff; 
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    color: #fff; 
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+    text-align: center;
+}
+
+
+label {
+    font-size: 16px;
+    color: #fff; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+}
+
+
+#box {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333; 
+    transition: border-color 0.3s ease;
+}
+
+#box:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+p {
+    font-size: 16px;
+    color: #fff; 
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#p1, #p2, #p3 {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+#resetButton {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px; 
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+
+    h4 {
+        font-size: 16px; 
+    }
+
+   #box {
+        width: 100%; 
+        max-width: 300px; 
+    }
+
+    button {
+        width: 100%; 
+        max-width: 300px; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 20px; 
+    }
+
+    h4 {
+        font-size: 14px; 
+    }
+
+    #box{
+        font-size: 14px; 
+    }
+
+    button {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+
+    p {
+        font-size: 12px; 
+    }
+}
